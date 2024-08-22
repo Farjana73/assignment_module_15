@@ -1,6 +1,16 @@
 const http = require("http");
 
 const server = http.createServer(function(req,res){
+    
+    if(req.url=="/"){
+        res.end("This is the Home Page")
+    }
+    if(req.url=="/about"){
+        res.end("This is the About Page")
+    }
+    if(req.url=="/contact"){
+        res.end("This is the Contact Page")
+    }
 
 
 })
